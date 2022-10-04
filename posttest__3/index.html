@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyek Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="title">PYEK STORE</a>
+        <input type="search" name="" id="" class="input-search" placeholder="Cari sesuatu Disini...">
+        <button type="submit" class="input-submit" id = "button">Cari</button>
+        <nav>
+            <ul>
+                <li><a href="#">BERANDA</a></li>
+                <li><a href="#" id="produk">PRODUK</a></li>
+                <li><a href="aboutme.html">TENTANG</a></li>
+                <li><a href="#">KONTAK</a></li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="checkbox" id="tombol">
+                        <span class="check"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="slider">
+            <h4>Klik Disini Untuk Slide Gambar</h4>
+            <input type="radio" name="choose" id="" class="choose_1">
+            <input type="radio" name="choose" id="" class="choose_2">
+            <div class="slides">
+                <a href="https://instagram.com/andrinurls_" target="_blank" rel="noopener noreferrer" class="slide s1">
+                    <img src="slide-1.jpg" alt="">
+                </a>
+                <a href="https://wa.me/6285250722465" target="_blank" rel="noopener noreferrer" class="slide">
+                    <img src="slide-2.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <h1 class="title-p" id="text">POPULER</h1>
+        <section id="populer" class="populer">
+            <div class="ff">
+                <div class="link">
+                    <a href="#harga-ff">
+                            <img src="diamond1.jpg">
+                            <div class="judul-produk">DIAMOND MOBILE LEGEND</div>
+                    </a>
+                </div>
+                <div class="overlay" id="harga-ff">
+                    <div class="popup">
+                        <h2>HARGA DIAMOND MOBILE LEGEND</h2>
+                        <a class="close" href="#populer">&times;</a>
+                        <br>
+                        <div class="content">
+                            1750 Diamonds  : 
+                            <br>    
+                            <span class="harga">Rp 300.000</span>
+                            <br>
+                            2.625 Diamonds : 
+                            <br>
+                            <span class="harga">Rp 500.000</span>
+                            <br>
+                            6.125 Diamonds : 
+                            <br>
+                            <span class="harga">Rp 1.000.000</span>
+                            <br>
+                            <a class="pesan" href="https://wa.me/6285250722465" 
+                            target="_blank" 
+                            rel="noopener noreferrer"><img src="./images/whatsapp.png" alt="">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+       
+    </main>
+    <script src="script.js"></script>
+    <script>
+        var tombol = document.getElementById("tombol");
+
+        tombol.onclick = function(){
+            document.body.classList.toggle("white-mode");
+        }
+    </script>
+</body>
+</html>
